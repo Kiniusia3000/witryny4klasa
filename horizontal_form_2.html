@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        td {
+            width: 100%;
+            font-family: papyrus;
+            font-size: large;
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 30px;
+            border: 1px dotted grey;
+            border-collapse: collapse;
+            vertical-align: center;
+        }
+
+        .p_pierwszy {
+            border: 2px solid cadetblue;
+            border-radius: 15px;
+            font-family: Poor richard;
+            font-size: large;
+            background-color: lightblue;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 100%;
+        }
+
+        input[type="password"]:focus,
+        input[type="email"]:focus {
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td style="width: 25%">Adres e-mail:</td>
+            <td style="width:75%"><input type="email" placeholder="adres@email.com" class="p_pierwszy"></td>
+        </tr>
+        <tr>
+            <td style="width: 25%">Hasło:</td>
+            <td style="width:75%"><input type="password" placeholder="maksimum 8 znakow" class="p_pierwszy"></td>
+        </tr>
+        <tr>
+            <td style="width: 25%">Rola:</td>
+            <td style="width:75%">
+                <form><input type="radio">kandydat<input type="radio">aplikant<input type="radio">kursant<input
+                        type="radio">absolwent</form>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 25%">Grupa:</td>
+            <td style="width:75%">
+                <form><input type="checkbox">wiosenna<input type="checkbox">letnia<input type="checkbox">jesienna<input
+                        type="checkbox">zimowa</form>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 25%"></td>
+            <td style="width:75%"><button type="submit" style="width:auto; padding:10px" class="p_pierwszy">Wyślij</button>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
