@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szachownica</title>
+    <style>
+        table, tr, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: arial;
+            height: 17px;
+            font-size: 1em;
+            font-weight: bold;
+            text-align:center;
+        }
+        .czarny{
+            background-color: dimgray;
+            width: 70px;
+            height: 70px;
+            font-size: 3em;
+        }
+        .bialy{
+            background-color: ivory;
+            width: 70px;
+            height: 70px;
+            font-size: 3em; 
+        }
+        #czarny_pionek{
+            text-shadow: 0px 0px 3px white;
+            transform: rotate(180deg);
+            font-weight: normal;
+        }
+        #bialy_pionek{
+            text-shadow: 1px 1px 3px black;
+            color:white;
+            font-weight: normal;
+        }
+        .knz{
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr><td class="knz"></td><td class="knz">a</td><td class="knz">b</td><td class="knz">c</td><td class="knz">d</td><td class="knz">e</td><td class="knz">f</td><td class="knz">g</td><td class="knz">h</td><td></td></tr>
+        <tr><td>8</td><td class="bialy" id="czarny_pionek">♜</td><td class="czarny" id="czarny_pionek">♞</td><td class="bialy" id="czarny_pionek">♝</td><td class="czarny" id="czarny_pionek">♛</td><td class="bialy" id="czarny_pionek">♚</td><td class="czarny" id="czarny_pionek">♝</td><td class="bialy" id="czarny_pionek">♞</td><td class="czarny" id="czarny_pionek">♜</td><td class="knz">8</td></tr>
+        <tr><td>7</td><td class="czarny" id="czarny_pionek">♟</td><td class="bialy" id="czarny_pionek">♟</td><td class="czarny" id="czarny_pionek">♟</td><td class="bialy" id="czarny_pionek">♟</td><td class="czarny" id="czarny_pionek">♟</td><td class="bialy" id="czarny_pionek">♟</td><td class="czarny" id="czarny_pionek">♟</td><td class="bialy" id="czarny_pionek">♟</td><td class="knz">7</td></tr>
+        <tr><td>6</td><td class="bialy"></td><td class="czarny"></td><td class="bialy"></td><td class="czarny"></td><td class="bialy"></td><td class="czarny"></td><td class="bialy"></td><td class="czarny"></td><td class="knz">6</td></tr>
+        <tr><td>5</td><td class="czarny"></td><td class="bialy"></td><td class="czarny"></td><td class="bialy"></td><td class="czarny"></td><td class="bialy"></td><td class="czarny"></td><td class="bialy"></td><td class="knz">5</td></tr>
+        <tr><td>4</td><td class="bialy"></td><td class="czarny"></td><td class="bialy"></td><td class="czarny"></td><td class="bialy"></td><td class="czarny"></td><td class="bialy"></td><td class="czarny"></td><td class="knz">4</td></tr>
+        <tr><td>3</td><td class="czarny"></td><td class="bialy"></td><td class="czarny"></td><td class="bialy"></td><td class="czarny"></td><td class="bialy"></td><td class="czarny"></td><td class="bialy"></td><td class="knz">3</td></tr>
+        <tr><td>2</td><td class="bialy" id="bialy_pionek">♙</td><td class="czarny" id="bialy_pionek">♙</td><td class="bialy" id="bialy_pionek">♙</td><td class="czarny" id="bialy_pionek">♙</td><td class="bialy" id="bialy_pionek">♙</td><td class="czarny" id="bialy_pionek">♙</td><td class="bialy" id="bialy_pionek">♙</td><td class="czarny" id="bialy_pionek">♙</td><td class="knz">2</td></tr>
+        <tr><td>1</td><td class="czarny" id="bialy_pionek">♖</td><td class="bialy" id="bialy_pionek">♘</td><td class="czarny" id="bialy_pionek">♗</td><td class="bialy" id="bialy_pionek">♕</td><td class="czarny" id="bialy_pionek">♔</td><td class="bialy" id="bialy_pionek">♗</td><td class="czarny" id="bialy_pionek">♘</td><td class="bialy" id="bialy_pionek">♖</td><td class="knz">1</td></tr>
+        <tr><td></td><td>a</td><td>b</td><td>c</td><td>d</td><td>e</td><td>f</td><td>g</td><td>h</td><td></td></tr>
+    </table>
+</body>
+</html>
