@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funkcje</title>
+    <style>
+    div.header{
+        height: 60px;
+        position: sticky;
+        top: 0;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding-top: 20px;
+    }
+    div.main{
+        height: calc(100vh - 60px);
+        background-color: white ; 
+        width: clamp(300px,70vw,800px);
+    }
+    div.aside{
+        height: calc(100vh - 60px);
+        width: min(30vh);
+        width: max(200px);
+        padding: min(3rem);
+        padding: max(1rem);
+        background-color: grey;
+    }
+    div.flex{
+        display: flex;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">HEADER</div>
+    </header>
+    <div class= "flex">
+    <main>
+        <div class="main">MAIN CONTENT</div>
+    </main>
+    <aside>
+        <div class ="aside">ASIDE</div>
+    </aside>
+</div>
+</body>
+</html>
