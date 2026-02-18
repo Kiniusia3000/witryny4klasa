@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+    #general {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: 
+        "header header"
+        "aside section"
+        "footer footer";
+        gap: 20px;
+    }
+    #general > header, aside, footer, section{
+        border: 1px solid black;
+    }
+    #general > header{     
+        grid-area: header;
+        padding: 20px;
+        background-color: #fbefef;
+        }
+    #general > aside{
+        grid-area: aside;
+        padding: 20px;
+        background-color: #F9DFDF;
+    }
+    #general > footer{
+        grid-area: footer;
+        padding: 20px;
+        background-color: #f5afaf;
+    }
+    #general > section {
+        grid-area: section;
+        padding: 20px;
+        background-color: #F9DFDF;
+    }
+    </style>
+</head>
+<body>
+    <div id="general">
+    <header>
+        <h1>Nagłówek</h1>
+    </header>
+    <aside>
+        <h2>Panel</h2>
+        <ul>
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
+        </ul>
+    </aside>
+    <section>
+        <h2>Główna zawartość</h2>
+        <a>To jest główna treść strony. Tutaj znajduje się najważniejsza zawartość.</a>
+    </section>
+    <footer>
+        <a>Stopka © 2026</a>
+    </footer>
+</div>
+</body>
+</html>
